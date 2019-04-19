@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.hi{
+    text-align: center;
+    transform: translate3d(0px, 0px, 0px);
+    /* 过渡 transform */
+    transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    touch-action: none
+  }
+  .overflowHide{
+    overflow: hidden;
+  }
+  .head{
+    height: 30px;
+    margin-top: -30px;
+    color: #666;
+  }
+  .pagehead{
+    background: rebeccapurple;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+  }
+  .nr{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background: #e856e8;
+    color: #fff;
+  }
+  .nr p{
+    padding: 0;
+    margin: 0;
+    line-height: 2
+  }
+  .gd{
+    position: relative;
+    overflow: auto;
+    min-width: 100%;
+  }
+  .am-list{
+    position: absolute;
+    min-width: 100%;
+  }
+  .genduo{
+    margin-top: -30px;
+    line-height: 30px;
+  }
