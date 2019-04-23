@@ -34,15 +34,15 @@ class Scroll {
     private reverse: string;  // 滚动反向 top down
     private points: Array<any>;
     private HasTop: boolean; // 是否有下拉刷新
-    private HasDown: boolean; // 是否有更多
+    private HasDown: boolean; // 是否有上拉
     private topText: Array<string>; // 顶部文字 有三种状态
     private downText: Array<string>; // 底部部文字 有三种状态
-    private callBackDown: Function;
-    private callBackTop: Function;
-    private topTextObj: HTMLElement;
-    private downTextObj: HTMLElement;
-    private HasMore: boolean;
-    private topBoundary: number;
+    private callBackDown: Function; // 上拉回调
+    private callBackTop: Function; // 下拉回调
+    private topTextObj: HTMLElement; // 上拉文字的HTML对象
+    private downTextObj: HTMLElement;// 下拉文字的HTML对象
+    private HasMore: boolean; // 是否有更多
+    private topBoundary: number; 
     private downBoundary: number
     constructor(options: ScrollOptions) {
         this.ref = options.target;
@@ -251,8 +251,8 @@ interface ScrollOptions {
     downBoundary?: number;
     topText?: Array<string>; // ['下拉可以刷新', '释放立即刷新', '数据刷新中']
     downText?: Array<string>; // ['上拉加载更多', '没有更多了'];
-    HasTop?: boolean; // 默认 true
-    HasDown?: boolean; // 默认 true
+    HasTop?: boolean; // 是否开启上拉 默认 true
+    HasDown?: boolean; //  是否开启下拉 默认 true
     callBackTop?: Function; // 上拉回调
     callBackDown?: Function; // 下拉回调
 }
