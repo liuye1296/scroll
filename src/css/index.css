@@ -44,7 +44,13 @@
     position: absolute;
     min-width: 100%;
   }
-  .genduo{
+  .toptext{
     margin-top: -30px;
     line-height: 30px;
+    display: none
+  }
+  .downtext{
+    margin-bottom: -30px;
+    line-height: 30px;
+    display: none
   }
