@@ -1,2 +1,2 @@
 # scroll
-scroll by mobile 
+scroll by mobile use TypeScript
